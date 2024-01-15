@@ -6,9 +6,9 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import { FiEdit } from "react-icons/fi";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { Modal } from "antd";
-import RejectModal from "@/components/modals/rejectModal";
 import { IoSearch } from "react-icons/io5";
 import { CiImport } from "react-icons/ci";
+import RejectModal from "../components/modals/rejectModal";
 
 const Providers = () => {
   const [show, setShow] = useState(false);

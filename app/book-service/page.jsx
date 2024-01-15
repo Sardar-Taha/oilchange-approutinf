@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { Stepper, Step } from "react-form-stepper";
 import VehicleSelect from "./forms/vehicleSelect";
