@@ -8,7 +8,13 @@ const MainNavbar = () => {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
 
-  return <div>{!isHomePage && <Navbar />}</div>;
+  return (
+    <div>
+      {!isHomePage &&
+        pathname === "/dashboard" &&
+        pathname === "/provider-dashboard" && <Navbar />}
+    </div>
+  );
 };
 
 export default MainNavbar;

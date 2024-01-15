@@ -114,3 +114,35 @@ body {
   color: #fff;
   font-size: 20px;
 }
+
+.table-class table {
+  width: 100%;
+  min-width: 1009px;
+}
+
+.table-class td,
+.table-class th {
+  text-align: left;
+  padding: 8px;
+}
+
+.ant-pagination .ant-pagination-item-active a {
+  color: #fff !important;
+}
+.ant-pagination .ant-pagination {
+  color: #fff !important;
+}
+
+.ant-pagination .ant-pagination-item-active {
+  background-color: #018ffc !important;
+
+  border: none !important;
+}
+
+.ant-pagination .ant-pagination-item a:hover {
+  color: #777;
+}
+
+.ant-pagination .ant-pagination-item a:active {
+  color: #000;
+}

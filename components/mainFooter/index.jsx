@@ -8,7 +8,13 @@ const MainFooter = () => {
 
   const isHomePage = pathname === "/";
 
-  return <div>{!isHomePage && <Footer />}</div>;
+  return (
+    <div>
+      {!isHomePage &&
+        pathname === "/dashboard" &&
+        pathname === "/provider-dashboard" && <Footer />}
+    </div>
+  );
 };
 
 export default MainFooter;
