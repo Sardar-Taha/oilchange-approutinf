@@ -23,7 +23,7 @@
 
 body {
   /* background-color: white; */
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif !important;
 }
 .background {
   background-image: url("../public/assets/bg.png");

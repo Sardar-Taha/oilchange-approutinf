@@ -22,6 +22,7 @@ const menuItems = [
 const HeroNavbar = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const router = usePathname();
+  const pathname = usePathname();
 
   const isActive = (path) => {
     return router === path ? "!text-white !bg-secondary " : "";
@@ -36,7 +37,7 @@ const HeroNavbar = (props) => {
 
   const handleHome = () => {
     if (pathname === "/") {
-      router.push("/");
+      pathname === "/";
     }
   };
 
@@ -107,13 +108,13 @@ const HeroNavbar = (props) => {
         <div className="absolute left-0 z-20 w-full px-10 py-10 transition-all duration-300 bg-black md:top-28 top-16">
           <div className="flex flex-col justify-center gap-2 ">
             {menuItems.map((item) => (
-              <Link
+              <p
                 key={item.label}
-                href={item.url}
+                onClick={handleHome}
                 className="text-lg font-medium text-white transition-all duration-300 hover:scale-105 hover:text-primary"
               >
                 {item.label}
-              </Link>
+              </p>
             ))}
             <Link
               href="/"
