@@ -1,9 +1,10 @@
 import Image from "next/image";
+import HomeSection from "./(home)";
 
 export default function Home() {
   return (
     <div>
-      <h1>sdlsdk</h1>
+      <HomeSection />
     </div>
   );
 }
