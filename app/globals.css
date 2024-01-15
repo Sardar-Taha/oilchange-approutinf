@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -16,12 +17,100 @@
   }
 }
 
+.main-container {
+  @apply max-w-[1536px] max-[1536px]:px-4 mx-auto;
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* background-color: white; */
+  font-family: "Oswald", sans-serif;
+}
+.background {
+  background-image: url("../public/assets/bg.png");
+  background-position: right;
+}
+.heroBg {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.83),
+      rgba(0, 0, 0, 0.83)
+    ),
+    url("../public/assets/heroBg.svg");
+  background-size: cover;
+  background-position: center, right bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+.priceBg {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.83),
+      rgba(0, 0, 0, 0.83)
+    ),
+    url("../public/assets/bgPrice.svg");
+  background-size: cover, cover;
+  background-position: center, right bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+.memberBg {
+  background-image: url("../public/assets/memberBg.svg");
+  background-size: cover;
+  background-position: center, right bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.weWork {
+  background-image: url("../public/assets/weWork/bg.svg");
+  background-size: contain;
+  background-position: center, right bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.box-shdadow {
+  box-shadow: 0px 4px 47.6px 0px rgba(0, 0, 0, 0.11);
+}
+
+.hover-container:hover > p {
+  color: #fff;
+}
+
+.calender .react-calendar {
+  background: #f2f9ff;
+  width: 100% !important;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.calender .react-calendar__tile--active {
+  background: #018ffc !important;
+  border-radius: 10px;
+}
+
+.calender .react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #018ffc !important;
+}
+
+.calender .react-calendar__navigation button:enabled:hover {
+  background-color: #018ffc;
+  border-radius: 20px;
+  opacity: 0.2;
+  color: #fff;
+}
+
+.calender
+  .react-calendar__navigation__arrow.react-calendar__navigation__prev2-button {
+  background-color: #018ffc;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 20px;
+}
+
+.calender
+  button.react-calendar__navigation__arrow.react-calendar__navigation__next2-button {
+  background-color: #018ffc;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 20px;
 }
